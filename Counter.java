@@ -55,6 +55,7 @@ class Storage
     public synchronized void setValue(int i)
     {
         this.i=i;
+        System.out.println(i);
     }
 
 
