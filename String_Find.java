@@ -20,10 +20,10 @@ public class String_Find {
                     int val=s.search(str1[0]);
                     if(val == 1)
                     {
-                        System.out.println(" Thread_1->>Word  exist");
+                        System.out.println(" Thread_1->> Word  exist");
                     }else
                     {
-                        System.out.println("Thread_1->>Word does not exist");
+                        System.out.println("Thread_1->> Word does not exist");
                     }
                 }catch (Exception e)
                 {
@@ -40,10 +40,10 @@ public class String_Find {
                     int val=s.search(str1[1]);
                     if(val == 1)
                     {
-                        System.out.println(" Thread_2->>Word  exist");
+                        System.out.println(" Thread_2->> Word  exist");
                     }else
                     {
-                        System.out.println("Thread_2->>Word does not exist");
+                        System.out.println("Thread_2->> Word does not exist");
                     }
                 }catch (Exception e)
                 {
@@ -60,10 +60,10 @@ public class String_Find {
                     int val=s.search(str1[2]);
                     if(val == 1)
                     {
-                        System.out.println(" Thread_3->>Word  exist");
+                        System.out.println(" Thread_3->> Word  exist");
                     }else
                     {
-                        System.out.println("Thread_3->>Word does not exist");
+                        System.out.println("Thread_3->> Word does not exist");
                     }
                 }catch (Exception e)
                 {
@@ -81,10 +81,10 @@ public class String_Find {
                     int val=s.search(str1[3]);
                     if(val == 1)
                     {
-                        System.out.println(" Thread_4->>Word  exist");
+                        System.out.println(" Thread_4->> Word  exist");
                     }else
                     {
-                        System.out.println("Thread_4->>Word does not exist");
+                        System.out.println("Thread_4->> Word does not exist");
                     }
 
                 }catch (Exception e)
