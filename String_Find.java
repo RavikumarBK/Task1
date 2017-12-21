@@ -4,17 +4,20 @@ import java.util.Scanner;
 public class String_Find {
 
     public static void main(String args[])throws IOException {
-        String s1=args[0];
-        String s2=args[1];
-        String s3=args[2];
-        String s4=args[3];
+        String str1[]=new String[args.length];
+        if(args.length>0)
+        {
+            for(int i=0;i<args.length;i++)
+                str1[i]=args[i];
+
+        }
         SearchString s=new SearchString();
         Thread th1=new Thread()
         {
             public void run()
             {
                 try {
-                    int val=s.search(s1);
+                    int val=s.search(str1[0]);
                     if(val == 1)
                     {
                         System.out.println(" Thread_1->>Word  exist");
@@ -34,7 +37,7 @@ public class String_Find {
             public void run()
             {
                 try {
-                    int val=s.search(s2);
+                    int val=s.search(str1[1]);
                     if(val == 1)
                     {
                         System.out.println(" Thread_2->>Word  exist");
@@ -54,7 +57,7 @@ public class String_Find {
             public void run()
             {
                 try {
-                    int val=s.search(s3);
+                    int val=s.search(str1[2]);
                     if(val == 1)
                     {
                         System.out.println(" Thread_3->>Word  exist");
@@ -75,7 +78,7 @@ public class String_Find {
             {
                 try {
 
-                    int val=s.search(s4);
+                    int val=s.search(str1[3]);
                     if(val == 1)
                     {
                         System.out.println(" Thread_4->>Word  exist");
